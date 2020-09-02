@@ -21,3 +21,45 @@ body {
   background-position: left center;
   background-repeat: no-repeat;
 }
+
+button{
+  cursor: pointer;
+  height: 50px;
+  width: 200px;
+  font-size: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: #ff3482;
+  box-shadow: 0px 0px 15px 2px #000000;
+  transition: ease-in-out .2s;
+}
+
+button:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px 1px #000000;
+}
+
+button:disabled{
+  cursor: default;
+  filter: brightness(30%);
+}
+
+button:active{
+  transform: scale(0.98);
+}
+
+/* Responsive layout for mobile devices */
+@media screen and (max-width: 1000px){
+  .container{
+    background-position: center center;
+    background-size: cover;
+  }
+
+  button{
+    width: 250px;
+    height: 55px;
+    font-size: 17px;
+  }
+}
